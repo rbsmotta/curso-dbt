@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+    # quando o DW for na BigQuery, database será o nome do projeto e schema será o dataset de leitura. 
+    # será criado um dataset com o nome de usuário criado no momento da conexão.
+  - name: sources
+    database: global-repeater-425020-n4
+    schema: northwind
+    tables:
+      - name: categories
+      - name: products
+      - name: suppliers
+      - name: employees
+      - name: order_details
+      - name: customers
+      - name: orders
+      - name: shippers
